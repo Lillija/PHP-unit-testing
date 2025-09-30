@@ -25,4 +25,7 @@ final class FunctionsTest extends TestCase
     public function testAddZeroToInteger(): void{
         $this->assertSame(3, addIntegers(3, 0));
     }
+    public function testAddingIsCommutative(): void{
+        $this->assertSame(addIntegers(3,2), addIntegers(2, 3));
+    }
 }
