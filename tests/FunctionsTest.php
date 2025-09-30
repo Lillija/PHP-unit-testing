@@ -17,4 +17,12 @@ final class FunctionsTest extends TestCase
     {
         $this->assertSame(-5, addIntegers(-2, -3));
     }
+    public function testAddPositiveAndNegativeIntegers(): void
+    {
+        $this->assertSame(1, addIntegers(3, -2));
+    }
+
+    public function testAddZeroToInteger(): void{
+        $this->assertSame(3, addIntegers(3, 0));
+    }
 }
